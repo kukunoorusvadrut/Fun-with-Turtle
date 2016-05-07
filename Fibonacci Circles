@@ -1,0 +1,17 @@
+import math
+import turtle
+lol = turtle.Turtle()
+lol.pendown()
+def fib(n):
+ a,b = 1,1
+ for i in range(n-1):
+  a,b = b,a+b
+ return a
+print fib(5)
+x = 0
+
+while (x<150):
+  lol.pendown()
+  lol.circle(fib(x))
+  x += 1
+  
